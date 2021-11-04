@@ -681,7 +681,9 @@ body {
   display: flex;
   align-items: baseline;
 }
-
+.footer-social {
+  margin-right: auto;
+}
 .footer-social > .text {
   margin-bottom: 20px;
   color: var(--current-white-color);
