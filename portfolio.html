@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Портфолио</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!-- Навигация -->
+      <div class="container nav">
+        <nav class="nav">
+          <!-- лого -->
+          <a class="link logo" href="./index.html" lang="en">
+            Web<span class="logo-nav">Studio</span>
+          </a>
+
+          <!-- ссылки -->
+          <ul class="lists menu">
+            <li class="menu-item">
+              <a class="link nav-link" href="./index.html">Студия</a>
+            </li>
+            <li class="menu-item">
+              <a class="link nav-link current" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="menu-item">
+              <a class="link nav-link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Почта и телефон -->
+        <ul class="lists menu">
+          <li class="menu-item">
+            <a
+              class="link nav-link nav-contacts"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="envelope">
+                <use href="./images/symbol-defs.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="menu-item">
+            <a class="link nav-link nav-contacts" href="tel:+380961111111">
+              <svg class="smartphone">
+                <use href="./images/symbol-defs.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <h1 class="hero-title headen">Наше портфолио</h1>
+      <!-- Фильтр -->
+      <section class="section">
+        <div class="container">
+          <ul class="lists filter">
+            <li class="item">
+              <button class="btn active" type="button">Все</button>
+            </li>
+            <li class="item">
+              <button class="btn" type="button">Веб-сайты</button>
+            </li>
+            <li class="item">
+              <button class="btn" type="button">Приложения</button>
+            </li>
+            <li class="item">
+              <button class="btn" type="button">Дизайн</button>
+            </li>
+            <li class="item">
+              <button class="btn" type="button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <!-- Карточки -->
+
+          <ul class="lists portfolio-cards menu">
+            <li class="portfolio-card">
+              <a class="link card" href="">
+                <div class="card-aside">
+                  <img
+                    class="images"
+                    src="./images/project1-sq.jpg"
+                    alt="Ноутбук с изображением карточек людей на экране"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p class="overlay-text">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h2 class="work-title">Технокряк</h2>
+                  <p class="work-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a class="link card" href="">
+                <div class="card-aside">
+                  <img
+                    class="images"
+                    src="./images/project2-sq.jpg"
+                    alt="Баскетболисты в прыжке, один с мячом, второй в защите"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p class="overlay-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Accusamus quod nobis obcaecati corrupti voluptates. Quae
+                      veniam totam harum excepturi repellendus. Lorem ipsum
+                      dolor sit amet, consectetur adipisicing elit. Assumenda
+                      rerum ullam nisi magnam natus earum, in exercitationem
+                      delectus quam tempore.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h2 class="work-title">
+                    Постер <span lang="en">Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="work-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a class="link card" href="">
+                <div class="card-aside">
+                  <img
+                    class="images"
+                    src="./images/project3-sq.jpg"
+                    alt="На фоне рыбы надпись The seafood restaurant"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p class="overlay-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Accusamus quod nobis obcaecati corrupti voluptates. Quae
+                      veniam totam harum excepturi repellendus.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h2 class="work-title">
+                    Ресторан <span lang="en">Seafood</span>
+                  </h2>
+                  <p class="work-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a class="link card" href="">
+                <div class="card-aside">
+                  <img
+                    class="images"
+                    src="./images/project4-sq.jpg"
+                    alt="Наушники"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p class="overlay-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Accusamus quod nobis obcaecati corrupti voluptates. Quae
+                      veniam totam harum excepturi repellendus.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h2 class="work-title">
+                    Проект <span lang="en">Prime</span>
+                  </h2>
+                  <p class="work-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a class="link card" href="">
+                <div class="card-aside">
+                  <img
+                    class="images"
+                    src="./images/project5-sq.jpg"
+                    alt="Коробки белая и картонного цвета с надписями сверху"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p class="overlay-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Accusamus quod nobis obcaecati corrupti voluptates. Quae
+                      veniam totam harum excepturi repellendus.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h2 class="work-title">
+                    Проект <span lang="en">Boxes</span>
+                  </h2>
+                  <p class="work-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a class="link card" href="">
+                <div class="card-aside">
+                  <img
+                    class="images"
+                    src="./images/project6-sq.jpg"
+                    alt="Монитор"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p class="overlay-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Accusamus quod nobis obcaecati corrupti voluptates. Quae
+                      veniam totam harum excepturi repellendus.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h2 class="work-title" lang="en">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="work-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a class="link card" href="">
+                <div class="card-aside">
+                  <img
+                    class="images"
+                    src="./images/project7-sq.jpg"
+                    alt="Книга в развернутом виде"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p class="overlay-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Accusamus quod nobis obcaecati corrupti voluptates. Quae
+                      veniam totam harum excepturi repellendus.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h2 class="work-title">
+                    Издание <span lang="en">Limited Edition</span>
+                  </h2>
+                  <p class="work-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a class="link card" href="">
+                <div class="card-aside">
+                  <img
+                    class="images"
+                    src="./images/project8-sq.jpg"
+                    alt="Бирка с надписью: Lab El Tag"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p class="overlay-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Accusamus quod nobis obcaecati corrupti voluptates. Quae
+                      veniam totam harum excepturi repellendus.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h2 class="work-title">Проект <span lang="en">LAB</span></h2>
+                  <p class="work-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a class="link card" href="">
+                <div class="card-aside">
+                  <img
+                    class="images"
+                    src="./images/project9-sq.jpg"
+                    alt="Руки на открытом ноутбуке. Картинка на экране ноутбука с надписью: Growing Business"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p class="overlay-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Accusamus quod nobis obcaecati corrupti voluptates. Quae
+                      veniam totam harum excepturi repellendus.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h2 class="work-title" lang="en">Growing Business</h2>
+                  <p class="work-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-nav">
+          <!-- Лого -->
+          <a class="link logo" href="./index.html" lang="en">
+            Web<span class="logo-footer">Studio</span>
+          </a>
+
+          <!-- адрес -->
+          <address>
+            <a
+              class="link text footer-text"
+              href="https://goo.gl/maps/VM6gPYjPhEStrqMR6"
+              target="_blank"
+              rel="noopener, nofollow, noreferrer"
+              >г. Киев, пр-т Леси Украинки, 26</a
+            >
+
+            <!-- Почта и телефон -->
+            <ul class="lists">
+              <li class="footer-item">
+                <a class="link footer-link" href="mailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="footer-item">
+                <a class="link footer-link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-social">
+          <p class="text">Присоединяйтесь</p>
+          <ul class="lists social">
+            <li class="social-list">
+              <a class="social-item" href="">
+                <svg class="social-icon">
+                  <use href="./images/symbol-defs.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list">
+              <a href="" class="social-item">
+                <svg class="social-icon">
+                  <use href="./images/symbol-defs.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list">
+              <a href="" class="social-item">
+                <svg class="social-icon">
+                  <use href="./images/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list">
+              <a href="" class="social-item">
+                <svg class="social-icon">
+                  <use href="./images/symbol-defs.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/header.js"></script>
+  </body>
+</html>
