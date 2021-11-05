@@ -501,11 +501,31 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal is-hidden" data-form-modal>
-        <button class="btn modal-btn" data-modal-close>
+        <button class="modal-btn" data-modal-close>
           <svg class="close-icon">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
+        <form class="modal-container">
+          <p class="text modal-text">Оставьте свои данные, мы вам перезвоним</p>
+          <label class="modal-label"
+            ><span class="modal-label-text">Имя</span>
+            <input class="modal-input" type="text" name="name" />
+          </label>
+          <label class="modal-label"
+            ><span class="modal-label-text">Телефон</span>
+            <input class="modal-input" type="tel" name="telephone" />
+            <label class="modal-label"
+              ><span class="modal-label-text">Почта</span>
+              <input class="modal-input" type="email" name="email" />
+            </label>
+            <label class="modal-label">
+              <span class="modal-label-text">Комментарий</span>
+              <textarea class="modal-textarea" name="comment" />
+            </label>
+          </label>
+          <button class="btn form-btn" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/header.js"></script>

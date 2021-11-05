@@ -738,7 +738,7 @@ body {
 
   min-width: 528px;
   min-height: 581px;
-  padding: 15px;
+  padding: 40px;
 
   background: var(--current-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -771,16 +771,62 @@ body {
 
   padding: 0;
 
-  background-color: var(--current-white-color);
-
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+
+  cursor: pointer;
+  background-color: var(--current-white-color);
+  color: var(--current-black-color);
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--function);
+}
+
+.modal-btn:focus,
+.modal-btn:hover {
+  color: var(--accent-color);
 }
 
 .close-icon {
   height: 18px;
   width: 18px;
-  fill: var(--current-black-color);
+  fill: currentColor;
+}
+
+.modal-container {
+  text-align: center;
+}
+.modal-text {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--current-title-color);
+}
+.modal-label-text {
+  display: block;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  text-align: left;
+
+  color: var(--current-text-color);
+}
+
+.modal-input {
+  display: block;
+  width: 448px;
+  height: 40px;
+  margin-bottom: 10px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  border-radius: 4px;
 }
 
 .form-label-text {
@@ -792,13 +838,13 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--current-white-color);
 }
 
 .form-input {
   width: 358px;
   height: 50px;
-  margin-right: 12px;
+  margin-right: 8px;
   padding-left: 16px;
 
   line-height: 20px;
@@ -817,7 +863,7 @@ body {
 .form-btn {
   display: inline-flex;
   align-items: center;
-
+  justify-content: center;
   min-width: 200px;
   min-height: 50px;
   padding: 10px 29px;
@@ -830,6 +876,15 @@ body {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  transition-property: background-color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--function);
+}
+
+.form-btn:focus,
+.form-btn:hover {
+  background-color: var(--hero-btn-accent-color);
 }
 
 .form-btn-text {
