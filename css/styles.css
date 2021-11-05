@@ -654,7 +654,7 @@ body {
 }
 
 /* Прячем заголовоки */
-.headen {
+.hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -812,8 +812,11 @@ body {
   display: block;
   text-align: left;
   margin-bottom: 10px;
+  color: var(--current-title-color);
 }
 .modal-label:last-of-type {
+  display: flex;
+  align-items: center;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -839,7 +842,19 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
 
   border-radius: 4px;
+
+  transition-property: border;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--function);
 }
+.modal-input:focus-visible,
+.modal-input:focus,
+.modal-textarea:focus-visible,
+.modal-textarea:focus {
+  border: 1px solid var(--accent-color);
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
 .modal-textarea {
   margin: 0;
   height: 120px;
@@ -859,7 +874,46 @@ body {
   transform: translate(12px, 28px);
   width: 18px;
   height: 18px;
-  fill: var(--current-title-color);
+  fill: currentColor;
+  transition-property: fill;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--function);
+}
+.modal-icon-check {
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--current-title-color);
+  border-radius: 4px;
+  background-color: var(--current-white-color);
+  transition-property: background-color, border;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--function);
+}
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.checkbox:checked + .modal-icon-check {
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  background-color: var(--accent-color);
+}
+
+.modal-input:focus-visible + .modal-icon,
+.modal-input:focus + .modal-icon,
+.modal-textarea:focus-visible + .modal-icon,
+.modal-textarea:focus + .modal-icon {
+  fill: var(--accent-color);
 }
 
 .modal-checkbox-text {
