@@ -513,6 +513,7 @@ body {
 .team-card-body {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--current-white-color);
 }
 .card-body {
   border-top: 0;
